@@ -98,9 +98,9 @@ layout: default
                 </section>
                 {% endif %}
 
-                <!-- Short About -->
+                <!-- Short About 设置微博 知乎等 -->
                 <section class="visible-md visible-lg">
-                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">ABOUT ME</a></h5>
+                    <hr><h5><a href="{{'/about/' | prepend: site.baseurl }}">关于我</a></h5>
                     <div class="short-about">
                         {% if site.sidebar-avatar %}
                             <a href="{{ site.baseurl }}/about">
@@ -191,11 +191,11 @@ layout: default
                     </div>
                 </section>
                 <!-- Friends Blog -->
-                {% if site.friends %}
+                {% if site.like %}
                 <hr>
-                <h5>FRIENDS</h5>
+                <h5>兴趣爱好</h5>
                 <ul class="list-inline">
-                    {% for friend in site.friends %}
+                    {% for friend in site.like %}
                         <li><a href="{{friend.href}}">{{friend.title}}</a></li>
                     {% endfor %}
                 </ul>
